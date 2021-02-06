@@ -1,0 +1,210 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<center>
+
+<title>Workouts</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+body {
+  background-image: url("background.png");
+  background-size: cover;
+  background-position: center center;
+  height: 400px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style the header */
+.header {
+  background-color: black;
+  padding: 1px;
+  margin: 0px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  text-align: center;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+h1   {color: white;}
+h2   {color: ##BFDD22;} 
+h3   {color: #F8070C;}
+p1   {color: red;} 
+p    {color: black;} 
+p1.a {
+  font-style: italic;
+}
+
+</style>
+</head>
+<body>
+<a name="top"></a>
+
+<div class="header">
+  <h1> <font size="8"> Workouts</h1>
+  <p1 class="a"> <font size="5" face="copperplate" color="neonyellow">A beginner's guide.</p1>
+</div>
+
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="facilities.html">Facilities</a>
+  <a href="rates.html">Rates</a>
+  <a href="workouts.html">Workouts</a>
+</div>
+
+<div class="row">
+<div class="column">
+    <h2 style="background-color:#4682B4;">Exercises &#127947;</h2>
+<div style="text-align:center"> 
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br><br>
+  <video id="video1" width="420">
+    <source src="squats.mp4" type="video/mp4">
+    Your browser does not support HTML video.
+  </video>
+</div> 
+
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 560; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 320; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 420; 
+} 
+</script> 
+<p>Squats</p>
+
+<video width="400" height "450" autoplay>
+  <source src="anteriordeltoidraise.mp4" type="video/mp4">
+  Your browser does not support HTML video.
+</video>
+
+<p>Anterior Deltoid Raise</p>
+
+<video width="400" height "450" autoplay>
+  <source src="uprightrow.mp4" type="video/mp4">
+  Your browser does not support HTML video.
+</video>
+
+<p>Upright row</p>
+ </div>
+  <div class="column">
+    <h2 style="background-color:#4682B4;">How-to &#10068;</h2>
+<br>
+<br>
+<br>
+<br>
+<h3 style="background-color:#1BC2E4"> Perform a Squat correctly </h3>
+    <p><b>Step 1:</b> Stand straight with feet shoulder-width apart <br> <b>Step 2:</b> Tighten your core <br> <b>Step 3:</b> Lower down as if sitting on a chair until your thighs are parallel to the ground <br> <b>Step 4:</b> Straighten your legs to lift back up</p>
+    <p><b>Muscles targeted:</b> Quadriceps, Hamstrings, Gluteals<p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h3 style="background-color:#1BC2E4"> Perform a Anterior Deltoid Raise correctly </h3>
+    <p><b>Step 1:</b> Stand straight with feet shoulder-width apart while holding a dumbbell with both hands <br> <b>Step 2:</b> Keep your arms straight with your elbows slightly bent <br> <b>Step 3:</b> Lift the weights to shoulder height <br> <b>Step 4:</b> Lower back down to the starting position</p>
+    <p><b>Muscles targeted:</b> Anterior Deltoid<p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h3 style="background-color:#1BC2E4"> Perform a Upright Row correctly </h3>
+    <p><b>Step 1:</b> Stand straight with feet shoulder-width apart <br> <b>Step 2:</b> Grip the barbell slightly closer than shoulder-width with arms extended<br> <b>Step 3:</b> Lift barbell up leader with elbows until arms are parallel to the floor (keep the weight close to your body) <br> <b>Step 4:</b> Lower back down to the starting position</p>
+    <p><b>Muscles targeted:</b> Trapezius, Deltoids, Biceps<p>
+<br>
+<a href="#top">Back to Top</a>
+  </div>
+</div>
+
+<div class="footer">
+  <p1>Copyright &copy; gymmboxx.com</p1>
+</div>
+
+</body>
+</html>
